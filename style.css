@@ -34,11 +34,10 @@
   
   .title {
     text-align: center;
-    font-size: calc(5vw + 1rem);
+    font-size: 6vw;
     font-weight: 800;
     color: var(--clr-light);
     letter-spacing: 2px;
-    margin: 0.3em 0 0.5em;
   }
 
   form  {
