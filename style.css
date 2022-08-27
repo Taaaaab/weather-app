@@ -18,9 +18,18 @@
     font-weight: 300;
     font-size: 1.5rem;
     background-color: var(--clr-primary);
-    color: var(--clr-light);
+    color: var(--clr-light); 
+  }
+
+  .container-grid {
     display: grid;
-    grid: repeat(1fr);
+    gap: 1.5rem;  
+    grid-template-columns: repeat(4, 1fr);
+    
+  }       
+
+  .header {
+    grid-column: 1 / 5;
   }
   
   .title {
@@ -29,10 +38,11 @@
     font-weight: 800;
     color: var(--clr-light);
     letter-spacing: 2px;
-    margin: 0.2em 0 0.5em;
+    margin: 0.3em 0 0.5em;
   }
 
   form  {
+    grid-column: 1 / 5;
     display: flex;
     justify-content: center;
     --spacer: 2rem;
@@ -66,3 +76,24 @@
   button[type="submit"]:hover, button[type="submit"]:focus {
     background-color: lightgrey;
   }
+
+  .display-container {
+    grid-column: 2 / 4;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+  }
+
+  .display-header {
+    margin: 0;
+    padding: 1rem;
+    background: #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .display-body {
+    padding: 1rem;
+    line-height: 2.5rem;
+  }
+
